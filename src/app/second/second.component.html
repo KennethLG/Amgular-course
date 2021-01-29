@@ -1,3 +1,57 @@
 <ul>
-	<li *ngFor="let user of users">{{ user }}</li>
+	<li>
+		<a routerLink="/">Home</a>
+	</li>
+
+	<li>
+		<a routerLink="/about">About</a>
+	</li>
 </ul>
+
+<router-outlet></router-outlet>
+
+<!--
+<div>
+	<p>name: {{name}}</p>
+	<p>Address: {{ adress.street}}</p>
+	<p>Second: {{ adress.city}}</p>
+	<ul>
+		<li *ngFor="let hobby of hobbies">{{hobby}}</li>
+	</ul>
+</div>
+
+<form (submit)="addUser(newUser)">
+	<input type="text" #newUser>
+	<button>
+		Send user
+	</button>
+</form>
+
+<ul>
+	<li *ngFor="let user of users">
+		{{user}}
+		<button (click)="sayhello()">Click me</button>
+		<button (click)="deleteUser(user)">x</button>
+	</li>
+</ul>
+
+<div>
+	<form>
+		<input type="text" name="name" [(ngModel)]="name"><br>
+		<input type="text" name="age" [(ngModel)]="age">
+	</form>
+
+	name: {{ name }} <br>
+	age: {{ age }}
+</div>
+
+<hr>
+
+<div *ngFor="let todo of todos">
+	<p>{{todo.userId}}</p>
+	<p>{{todo.id}}</p>
+	<p>{{todo.title}}</p>
+	<p>{{todo.completed}}</p>
+</div>
+
+	-->
